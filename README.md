@@ -2,6 +2,9 @@
 ===========
 Video Embed
 
+Поддерживаемые видеоуслуги: CollegeHumor, Dailymotion, Facebook, Flickr, Funny Or Die, Hulu, Kickstarter, The New York Times, Ted, Vimeo, Vine, YouTube.
+
+
 Установка
 ------------
 
