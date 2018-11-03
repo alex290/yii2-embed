@@ -1,31 +1,47 @@
-Video Embed
+Видео Плеер 
 ===========
 Video Embed
 
-Installation
+Установка
 ------------
 
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+Предпочтительным способом установки этого расширения является [composer](http://getcomposer.org/download/).
 
-Either run
+Установка
 
 ```
 php composer.phar require --prefer-dist alex290/yii2-embed "*"
 ```
 
-or add
+или добавить
 
 ```
 "alex290/yii2-embed": "*"
 ```
 
-to the require section of your `composer.json` file.
+вставить в раздел Вашего `composer.json` файла.
 
 
-Usage
+Использование
 -----
 
-Once the extension is installed, simply use it in your code by  :
+После установки расширения просто используйте его в своем коде  :
 
 ```php
-<?= \alex290\embed\AutoloadExample::widget(); ?>```
+<?= \alex290\embed\Embed::widget(['url' => 'https://www.youtube.com/watch?v=Pwe-pA6TaZk']); ?>```
+
+
+или
+
+```php
+<?= \alex290\embed\Embed::widget(['url' => 'https://www.youtube.com/watch?v=Pwe-pA6TaZk', 'type'=> 'video']); ?>```
+
+Также можно изменить размеры
+
+```php
+<?= \alex290\embed\Embed::widget(['url' => 'https://www.youtube.com/watch?v=Pwe-pA6TaZk', 'type'=> 'video', 'width'=> 800, 'height' => 600 ]); ?>```
+
+А токже можно получить ссылку изображения
+
+```php
+<?= \alex290\embed\Embed::widget(['url' => 'https://www.youtube.com/watch?v=Pwe-pA6TaZk', 'type'=> 'img']); ?>```

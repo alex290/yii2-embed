@@ -40,14 +40,23 @@ class Embed extends \yii\base\Widget
 {
     public $url;
     public $type = 'video';
+    public $width;
+    public $height;
 
     public function run()
     {
         $url = Html::encode($this->url);
         $videoEmbed = new VideoEmbed($url);
         
+        $width = $this->width;
+        $height = $this->height;
+        
+        if ($width && $height) {
+            $videoEmbed->setSize($width, $height);
+        }
+        
         $type = $this->type;
-        if ($type == 'thumbnail') {
+        if ($type == 'img') {
             $img = $videoEmbed->thumbnail;
             $data = $img['url'];
         } elseif ($type == 'video') {
