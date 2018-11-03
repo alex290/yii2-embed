@@ -2,8 +2,8 @@
 
 /*
  * Video embed
- * https://github.com/ivopetkov/video-embed
- * Copyright (c) Ivo Petkov
+ * https://github.com/alex290/yii2-embed
+ * Copyright (c) WebGoal
  * Free to use under the MIT license.
  */
 
